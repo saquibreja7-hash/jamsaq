@@ -24,3 +24,14 @@ The homepage includes the brand header, hero, services, selected work, process, 
 ## Planning
 
 - [Product Requirements Document](docs/PRD.md)
+- [Codex Workflow](docs/CODEX_WORKFLOW.md)
+- [Build Task List](TASKS.md)
+
+## Working With Codex
+
+Start with `TASKS.md`, follow the acceptance criteria, and use `AGENTS.md` for repository rules. For each implementation task, run:
+
+```bash
+npm run lint
+npm run build
+```
