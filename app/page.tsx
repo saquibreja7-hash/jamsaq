@@ -12,6 +12,7 @@ import {
   Search,
   ShieldCheck,
 } from 'lucide-react'
+import { SiteHeader } from './components/site-header'
 
 const services = [
   {
@@ -85,41 +86,7 @@ const eyebrow = 'mb-[18px] text-[0.79rem] font-extrabold uppercase text-[var(--t
 export default function Home() {
   return (
     <main className="min-h-screen bg-[var(--paper)] text-[var(--ink)] [background-image:linear-gradient(90deg,rgba(28,30,34,0.06)_1px,transparent_1px),linear-gradient(180deg,rgba(28,30,34,0.05)_1px,transparent_1px)] [background-size:64px_64px] max-[720px]:[background-size:42px_42px]">
-      <header
-        className={`${shell} sticky top-0 z-20 flex items-center justify-between gap-6 border-b border-[var(--line)] bg-[rgba(250,249,245,0.92)] py-[18px] backdrop-blur-2xl max-[1040px]:flex-wrap max-[1040px]:items-stretch max-[720px]:pt-3`}
-        aria-label="Primary navigation"
-      >
-        <a className="flex min-w-[220px] items-center gap-3 text-inherit no-underline max-[1040px]:flex-1" href="#top" aria-label="Jamsaq home">
-          <span className="grid h-[42px] w-[42px] place-items-center rounded-lg bg-[var(--ink)] font-extrabold text-[var(--paper)] shadow-[6px_6px_0_var(--mint)]">
-            J
-          </span>
-          <span>
-            <strong className="block leading-none">Jamsaq</strong>
-            <small className="mt-1 block text-[0.78rem] leading-none text-[var(--muted)]">Web Design Agency</small>
-          </span>
-        </a>
-        <nav
-          className="flex items-center justify-center gap-2 rounded-lg border border-[var(--line)] bg-[rgba(255,255,255,0.72)] p-1.5 max-[1040px]:order-3 max-[1040px]:w-full max-[720px]:justify-between max-[720px]:overflow-x-auto"
-          aria-label="Site sections"
-        >
-          {['Services', 'Work', 'Pricing', 'Contact'].map((item) => (
-            <a
-              className="rounded-md px-[13px] py-2.5 text-[0.92rem] text-[var(--muted)] no-underline hover:bg-[var(--white)] hover:text-[var(--ink)] focus-visible:bg-[var(--white)] focus-visible:text-[var(--ink)] max-[720px]:whitespace-nowrap"
-              href={`#${item.toLowerCase()}`}
-              key={item}
-            >
-              {item}
-            </a>
-          ))}
-        </nav>
-        <a
-          className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-[var(--coral)] px-[15px] font-bold text-[var(--white)] no-underline shadow-[0_12px_28px_rgba(210,83,59,0.2)] max-[720px]:w-full"
-          href="mailto:hello@jamsaq.studio"
-        >
-          <Mail size={18} aria-hidden="true" />
-          <span>Start a brief</span>
-        </a>
-      </header>
+      <SiteHeader />
 
       <section
         className={`${shell} grid min-h-[calc(100vh-80px)] grid-cols-[minmax(0,1fr)_minmax(360px,520px)] items-center gap-14 py-16 max-[1040px]:min-h-0 max-[1040px]:grid-cols-1 max-[1040px]:pt-12 max-[720px]:gap-9`}
