@@ -20,3 +20,7 @@ npm run dev -- --host 0.0.0.0
 ```
 
 The homepage includes the brand header, hero, services, selected work, process, pricing, and project brief form.
+
+## Planning
+
+- [Product Requirements Document](docs/PRD.md)
