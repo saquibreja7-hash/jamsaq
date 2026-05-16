@@ -12,17 +12,17 @@ Primary strategy source:
 
 Current stack:
 
+- Next.js 16 App Router
 - React 19
 - TypeScript
-- Vite
-- CSS modules via plain CSS files
+- Tailwind CSS 4
 - `lucide-react` for icons
 
 ## Repository Map
 
-- `src/App.tsx` - main homepage content and component structure
-- `src/App.css` - homepage layout, responsive styles, and visual system
-- `src/index.css` - global CSS variables and base styles
+- `app/page.tsx` - main homepage content and component structure
+- `app/layout.tsx` - root layout and metadata
+- `app/globals.css` - Tailwind import, CSS variables, and base styles
 - `docs/PRD.md` - product strategy, market research, target personas, service lines, and roadmap
 - `TASKS.md` - ordered implementation checklist
 - `docs/CODEX_WORKFLOW.md` - how to work with Codex on this repo
@@ -33,7 +33,7 @@ Run from the repository root:
 
 ```bash
 npm install
-npm run dev -- --host 0.0.0.0
+npm run dev -- --hostname 0.0.0.0
 npm run lint
 npm run build
 ```
@@ -71,10 +71,11 @@ For docs-only changes, lint/build are optional unless the README, package metada
 ## Implementation Style
 
 - Prefer small, reviewable edits tied to one task in `TASKS.md`.
+- Use Tailwind utilities for layout and component styling.
 - Reuse the existing CSS variables before adding new colors.
 - Keep component structure simple until duplication becomes painful.
 - Do not introduce routing, backend services, analytics, CMS, or form providers without a task that explicitly calls for them.
-- Do not commit generated build output from `dist/`.
+- Do not commit generated build output from `.next/`, `out/`, or `dist/`.
 
 ## Definition of Done
 

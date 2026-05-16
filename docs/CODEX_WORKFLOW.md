@@ -94,7 +94,7 @@ npm run build
 5. Start the dev server when visual review is useful:
 
 ```bash
-npm run dev -- --host 0.0.0.0
+npm run dev -- --hostname 0.0.0.0
 ```
 
 6. Update `TASKS.md`.

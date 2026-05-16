@@ -1,6 +1,6 @@
 # Jamsaq Web Design Agency
 
-A responsive agency website built with React, TypeScript, Vite, and lucide-react.
+A responsive agency website built with Next.js, TypeScript, Tailwind CSS, and lucide-react.
 
 ## Scripts
 
@@ -16,7 +16,7 @@ npm run lint
 Start the app with:
 
 ```bash
-npm run dev -- --host 0.0.0.0
+npm run dev -- --hostname 0.0.0.0
 ```
 
 The homepage includes the brand header, hero, services, selected work, process, pricing, and project brief form.

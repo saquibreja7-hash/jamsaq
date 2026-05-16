@@ -13,6 +13,7 @@ Status legend:
 - [x] Create PRD with market research and product strategy.
 - [x] Connect local repo to GitHub.
 - [x] Add Codex project instructions and workflow docs.
+- [x] Migrate stack to Next.js App Router and Tailwind CSS.
 - [ ] Keep `TASKS.md` updated after every meaningful change.
 
 Acceptance criteria:
@@ -20,6 +21,7 @@ Acceptance criteria:
 - `AGENTS.md` exists at repo root.
 - `docs/CODEX_WORKFLOW.md` exists.
 - README links to the PRD, workflow, and task list.
+- `package.json` uses Next.js scripts and Tailwind CSS dependencies.
 
 ## Phase 1: PRD-Aligned Homepage MVP
 
@@ -242,7 +244,7 @@ npm run build
 For visual changes, also start:
 
 ```bash
-npm run dev -- --host 0.0.0.0
+npm run dev -- --hostname 0.0.0.0
 ```
 
 Then inspect the local URL before finishing.

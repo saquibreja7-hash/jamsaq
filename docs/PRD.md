@@ -287,6 +287,25 @@ The Jamsaq website is the first product surface for the agency. It must convert 
 - Include process detail so buyers know what happens after inquiry.
 - Include outcome language around trust, leads, clarity, speed, and usability.
 
+### 8.5 Technical stack
+
+The Jamsaq website should use a stack that supports performance, SEO, maintainability, and future service-page expansion.
+
+- Framework: Next.js App Router
+- Language: TypeScript
+- Styling: Tailwind CSS
+- Icons: lucide-react
+- Hosting target: Vercel or another Next.js-compatible platform
+- Initial rendering model: static-first marketing pages, with dynamic/server functionality added only for forms, analytics, CRM, or CMS needs
+
+Stack requirements:
+
+- Keep public marketing pages fast and crawlable.
+- Prefer server components unless client-side state or browser APIs are required.
+- Use Tailwind utilities for layout and component styling.
+- Keep global CSS limited to Tailwind imports, theme variables, resets, and base accessibility styles.
+- Avoid adding a CMS, analytics provider, or form backend until the relevant task is selected.
+
 ## 9. Lead Funnel Requirements
 
 ### 9.1 Lead qualification fields
